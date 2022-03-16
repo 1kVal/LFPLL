@@ -1,0 +1,40 @@
+.App {
+  &__showOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+  &__hiddenModal {
+    display: none;
+    visibility: hidden;
+  }
+  &__showModal {
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+
+    background-color: white;
+    border-radius: 30px;
+    padding: 4rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .App__showModal {
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+    background-color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 4rem;
+  }
+}

@@ -1,0 +1,26 @@
+.wahine {
+  width: 10vw;
+  @media only screen and (max-width: $Large) {
+    min-width: 20vw;
+  }
+  @media only screen and (max-width: $Medium) {
+    min-width: 30vw;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+    max-height: 20vh;
+    > img {
+      max-height: 100%;
+
+      max-width: 100%;
+    }
+  }
+  &__h5 {
+    margin-bottom: 1rem;
+  }
+  &__h6 {
+    color: black;
+  }
+}

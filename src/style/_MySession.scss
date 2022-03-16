@@ -1,0 +1,91 @@
+.mysession {
+  min-width: 25vw;
+  max-width: 30vw;
+  padding: 0 1rem;
+  margin: 2rem;
+  @media only screen and (max-width: $Large) {
+    min-width: 40vw;
+  }
+  @media only screen and (max-width: $Large) {
+    min-width: 60vw;
+  }
+  @media only screen and (max-width: $Small) {
+    min-width: 70vw;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    &__region {
+      background-color: #fbdcc5;
+      border-radius: 10px;
+      padding: 0.5vw 1vh;
+      color: black;
+      font-weight: 400;
+      @media only screen and (max-width: $XSmall) {
+        text-align: center;
+      }
+    }
+    &__surfstyle {
+      background-color: #c2e5e0;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+      color: black;
+      font-weight: 400;
+      @media only screen and (max-width: $XSmall) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__infos {
+    &__spot {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      &__h4 {
+        font-weight: bold;
+        padding-bottom: 1rem;
+      }
+      &__h6 {
+        font-weight: 500;
+        font-size: 15px;
+        color: black;
+        padding-bottom: 1rem;
+      }
+      &__adress {
+        font-weight: 500;
+        font-size: 15px;
+        color: black;
+        padding-bottom: 1rem;
+      }
+    }
+    &__rdv {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-family: $Main-font;
+      font-weight: 500;
+      font-size: 15px;
+      color: black;
+      padding-bottom: 1rem;
+      &__date {
+        display: flex;
+        flex-direction: column;
+        &__p {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  &__hr {
+    border: 1px solid #ebebeb;
+    margin: 2rem 2rem;
+  }
+
+  &__details {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
